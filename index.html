@@ -7,11 +7,65 @@
         name="description"
         content="MST Test site"
     >
-    <title>MST Test</title>
+    <title>MST Test1</title>
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer="defer"></script>
 </head>
 <body>
-    mst
+    <main class="main">
+        <section class="hero">
+            <div class="hero__content-wrapper">
+                <header class="header" id="header">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__logo-img" src="/resource/icons/logo.svg" alt="logo">
+                            <span>HOME COMPANY</span>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="header__nav">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Advantages</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Feedback</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="hero__content">
+                    <h1 class="hero__content-title">
+                        Real estate rental
+                    </h1>
+                    <h2 class="hero__content-subtitle">
+                        luxury apartments
+                    </h2>
+                    <ul class="hero__content-list">
+                        <li class="hero__content-list-item">
+                            <div class="hero__content-list-icon"></div>
+                            Up to <span>$10 000</span> per month
+                        </li>
+                        <li class="hero__content-list-item">
+                            <div class="hero__content-list-icon"></div>
+                            Deposit up to <span>30%</span>
+                        </li>
+                        <li class="hero__content-list-item">
+                            <div class="hero__content-list-icon"></div>
+                            Discounts up to <span>17%</span>
+                        </li>
+                    </ul>
+                    <button class="hero__button btn">Order</button>
+                </div>
+            </div>
+            <div class="hero__img-wrapper">
+                <img class="hero__img" src="/resource/images/hero_bg.jpg" alt="building">
+            </div>
+        </section>
+    </main>
 </body>
 </html>

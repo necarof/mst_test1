@@ -1,0 +1,63 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-dark: #222222;
+    --color-dark-gray: #282829;
+    --color-blue: #38535D;
+    --color-oceanic: #405D65;
+    --color-iron: #55565A;
+    --color-gray: #D6D6D6;
+    --color-accent: #D5C9BE;
+}
+
+@font-face {
+    font-family: "Prata";
+    src: url(./resource/fonts/Prata-Regular.ttf) format("truetype"), url(./resource/fonts/Prata-Regular.woff) format("woff");
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    background-color: var(--color-dark);
+    font-family: "Prata", sans-serif;
+    font-weight: normal;
+    color: var(--color-white);
+}
+
+a {
+    color: var(--color-white);
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: var(--color-white);
+}
+
+.container {
+    margin: auto;
+    max-width: 1629px;
+    padding: 0 16px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+    padding: 0 50px 0 50px;
+    background-color: var(--color-white);
+    border-radius: 4px;
+    border: 1px solid var(--color-white);
+    transition: all 0.2s;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}

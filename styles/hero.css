@@ -1,0 +1,153 @@
+.hero {
+    height: 1009px;
+    padding-bottom: 50px;
+    position: relative;
+    background-image: url("/resource/images/hero_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1157px;
+    background-color: var(--color-dark);
+}
+
+.hero .container {
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+.hero__content {
+    max-width: 538px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+}
+
+.hero__content-title {
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.2;
+}
+
+.hero__content-subtitle {
+    margin-bottom: 64px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.2;
+    font-family: Arial;
+}
+
+.hero__content-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 35px;
+}
+
+.hero__content-list-item {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 15px;
+    height: 39px;
+    padding: 0 20px 0 1px;
+    border-radius: 4px;
+    white-space: nowrap;
+    background-color: var(--color-dark-gray);
+    font-family: Arial;
+    font-size: 24px;
+}
+
+.hero__content-list-item span {
+    font-family: "Prata";
+    font-size: 40px;
+}
+
+.hero__content-list-icon {
+    margin-right: 17px;
+    width: 39px;
+    height: 37px;
+    background-image: url("/resource/icons/icon_check.svg");
+    background-size: cover;
+}
+
+.hero__button {
+    margin-top: 40px;
+}
+
+.hero__button:hover {
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1536px) {
+    .hero::before {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .hero__content {
+        max-width: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero__content-list {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__content-list-item {
+        background: transparent;
+    }
+
+    .hero::before {
+        max-width: none;
+        opacity: 0.3;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero {
+        padding: 0;
+    }
+
+    .hero__content-title {
+        font-size: 50px;
+    }
+
+    .hero__content-subtitle {
+        font-size: 40px;
+    }
+
+    .hero__content-list-item {
+        padding: 0;
+        column-gap: 10px;
+        font-size: 18px;
+    }
+
+    .hero__content-list-icon {
+        margin-right: 4px;
+        width: 29px;
+        height: 27px;
+    }
+
+    .hero__content-list-item span {
+        font-size: 20px;
+    }
+}

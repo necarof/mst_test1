@@ -7,17 +7,17 @@
         name="description"
         content="MST Test site"
     >
+    <meta name="author" content="Nikita Mastepanov">
     <title>MST Test1</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="global.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <script src="main.js" defer="defer"></script>
 </head>
 <body>
     <main class="main">
-        <section class="hero">
-            <div class="hero__content-wrapper">
-                <header class="header" id="header">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__wrapper">
                     <div class="header__logo">
                         <a class="header__logo-link" href="#">
                             <img class="header__logo-img" src="/resource/icons/logo.svg" alt="logo">
@@ -37,7 +37,12 @@
                             </li>
                         </ul>
                     </nav>
-                </header>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
                 <div class="hero__content">
                     <h1 class="hero__content-title">
                         Real estate rental
@@ -61,9 +66,6 @@
                     </ul>
                     <button class="hero__button btn">Order</button>
                 </div>
-            </div>
-            <div class="hero__img-wrapper">
-                <img class="hero__img" src="/resource/images/hero_bg.jpg" alt="building">
             </div>
         </section>
     </main>

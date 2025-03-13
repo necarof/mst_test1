@@ -14,34 +14,33 @@
     <script src="main.js" defer="defer"></script>
 </head>
 <body>
-    <main class="main">
-        <header class="header" id="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="header__logo">
-                        <a class="header__logo-link" href="#">
-                            <img class="header__logo-img" src="/resource/icons/logo.svg" alt="logo">
-                            <span>HOME COMPANY</span>
-                        </a>
-                    </div>
-                    <nav>
-                        <ul class="header__nav">
-                            <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Advantages</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Feedback</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="#" class="header__nav-link">Contacts</a>
-                            </li>
-                        </ul>
-                    </nav>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <a class="logo-link" href="#">
+                        <img class="logo-img" src="/resource/icons/logo.svg" alt="logo">
+                        <span>HOME COMPANY</span>
+                    </a>
                 </div>
+                <nav>
+                    <ul class="header__nav">
+                        <li class="header__nav-item">
+                            <a href="#advantages" class="header__nav-link">Advantages</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#feedback" class="header__nav-link">Feedback</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#contacts" class="header__nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </header>
-
-        <section class="hero">
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero" id="about">
             <div class="container">
                 <div class="hero__content">
                     <h1 class="hero__content-title">
@@ -69,7 +68,7 @@
             </div>
         </section>
 
-        <section class="advantages">
+        <section class="advantages" id="advantages">
             <div class="container">
                 <div class="advantages__wrapper">
                     <ul class="advantages__list">
@@ -103,16 +102,16 @@
             </div>
         </section>
         
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="container">
                 <div class="feedback__wrapper">
+                    <h2 class="feedback__title">
+                        Leave your contacts and we will get in touch with you.
+                    </h2>
                     <form action="#" class="feedback__form">
-                        <h2 class="feedback__title">
-                            Leave your contacts and we will get in touch with you.
-                        </h2>
-                        <input type="text" name="name" id="form_name" placeholder="name">
-                        <input type="email" name="email" id="form_email" placeholder="E-mail">
-                        <label>
+                        <input class="input" type="text" name="name" id="form_name" placeholder="Name">
+                        <input class="input" type="email" name="email" id="form_email" placeholder="E-mail">
+                        <label class="feedback__checkbox">
                             <input type="checkbox" name="checkbox" id="form_checkbox">
                             <span>I accept Privacy policy</span>
                         </label>
@@ -122,5 +121,72 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <ul class="footer__top-list">
+                <li class="footer__top-list-item">
+                    <a href="#advantages">Advantages</a>
+                </li>
+                <li class="footer__top-list-item">
+                    <a href="#feedback">Feedback</a>
+                </li>
+                <li class="footer__top-list-item">
+                    <a href="#about">about us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__inner footer__top-inner">
+                    <div class="logo">
+                        <a class="logo-link" href="#">
+                            <img class="logo-img" src="/resource/icons/logo.svg" alt="logo">
+                            <span>HOME COMPANY</span>
+                        </a>
+                    </div>
+                    <ul class="footer__wrapper-contacts" id="contacts">
+                        <li class="footer__wrapper-contacts-item">
+                            <a href="#">
+                                <img src="/resource/icons/icon_instagram.svg" alt="icon">
+                            </a>
+                        </li>
+                        <li class="footer__wrapper-contacts-item">
+                            <a href="#">
+                                <img src="/resource/icons/icon_tiktok.svg" alt="icon">
+                            </a>
+                        </li>
+                        <li class="footer__wrapper-contacts-item">
+                            <a href="#">
+                                <img src="/resource/icons/icon_in.svg" alt="icon">
+                            </a>
+                        </li>
+                        <li class="footer__wrapper-contacts-item">
+                            <a href="#">
+                                <img src="/resource/icons/icon_facebook.svg" alt="icon">
+                            </a>
+                        </li>
+                        <li class="footer__wrapper-contacts-item">
+                            <a href="#">
+                                <img src="/resource/icons/icon_telegram.svg" alt="icon">
+                            </a>
+                        </li>
+                        <li class="footer__wrapper-contacts-item">
+                            <a href="#">
+                                <img src="/resource/icons/icon_youtube.svg" alt="icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="footer__btn btn">order</button>
+                </div>
+                <div class="footer__inner footer__bottom">
+                    <div class="footer__copyr">
+                        © 2024, Copyright.
+                    </div>
+                    <a href="#" class="footer__private-link">Privacy policy</a>
+                    <a href="#" class="footer__terms-link">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
